@@ -11,7 +11,7 @@ import Checkbox from "@mui/material/Checkbox"
 import IconButton from "@mui/material/IconButton"
 import ListItem from "@mui/material/ListItem"
 import type { ChangeEvent } from "react"
-import { getListItemSx } from "./TaskItem.styles"
+import { getListItemSx } from "./TaskItem.styles.ts"
 
 type Props = {
   task: Task
