@@ -1,5 +1,19 @@
-import { createAction, createReducer, nanoid } from "@reduxjs/toolkit"
+import { createAction, createReducer, createSlice, nanoid } from "@reduxjs/toolkit"
 import { createTodolistAC, deleteTodolistAC } from "./todolists-reducer.ts"
+
+
+export const tasksSlice = createSlice({
+  name: "tasks",
+  initialState: {} as TasksState,
+  reducers: (create) => ({})
+})
+
+export const {} = tasksSlice.actions
+export const TasksReducer = tasksSlice.reducer
+
+
+
+
 
 export const deleteTaskAC = createAction<{ todolistId: string; taskId: string }>("tasks/deleteTask")
 export const createTaskAC = createAction<{ todolistId: string; title: string }>("tasks/createTask")
