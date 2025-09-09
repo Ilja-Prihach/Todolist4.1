@@ -49,7 +49,7 @@ export const todolistsSlice = createSlice({
 
 
 export const {deleteTodolistAC, changeTodolistTitleAC, changeTodolistFilterAC, createTodolistAC} = todolistsSlice.actions
-export const appReducer = todolistsSlice.reducer
+export const todolistsReducer = todolistsSlice.reducer
 
 // export const deleteTodolistAC = createAction<{ id: string }>("todolists/deleteTodolist")
 // export const createTodolistAC = createAction("todolists/createTodolist", (title: string) => {
