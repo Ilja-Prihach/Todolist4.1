@@ -3,6 +3,7 @@ import { createSlice } from "@reduxjs/toolkit"
 
 
 
+
 export const appSlice = createSlice({
   name: 'app',
   initialState: {
@@ -15,10 +16,15 @@ export const appSlice = createSlice({
       state.themeMode = action.payload.themeMode
     }),
   }),
+  selectors: {
+    selectThemeMode : (state) => state.themeMode
+  }
 })
 
 // action creator достается из appSlice.actions
 export const { changeThemeModeAC } = appSlice.actions
+//Достаем селекторы
+export const { selectThemeMode } = appSlice.selectors
 // reducer достается из appSlice.reducer
 export const appReducer = appSlice.reducer
 
